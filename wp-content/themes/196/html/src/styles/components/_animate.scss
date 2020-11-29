@@ -1,0 +1,61 @@
+/* Animation Type */
+
+[data-animate="fade-up"] {
+	transform: translateY(100px);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="fade-down"] {
+	transform: translateY(-100px);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="fade-right"] {
+	transform: translateX(100px);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="fade-left"] {
+	transform: translateX(-100px);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="fade-in"] {
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="zoom-in"] {
+	transform: scale(0);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+[data-animate="zoom-out"] {
+	transform: scale(1.3);
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-duration: .8s;
+}
+
+/* Animation Duration */
+
+[data-animate-duration="2000"] {
+	transition-duration: 2s;
+}
+
+[data-animate-duration="1500"] {
+	transition-duration: 1.5s;
+}
+
+

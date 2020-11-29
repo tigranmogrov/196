@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+	<meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- og format -->
+	<meta property="og:title" content="">
+	<!-- bar color -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">
+	<title>Facility</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+	<%= _.template(require('./parts/header.html'))() %>
+	<div class="app" id="app">
+		<div class="facility ">
+			<div class="d-flex">
+				<section class="visual-top mask">
+					<div class="container">
+						<h2 class="secondary-title z-index text-center">施設紹介</h2>
+					</div>
+				</section>
+			</div>
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list" id="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Home</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link active">施設紹介</a>
+					</li>
+				</ul>
+			</div>
+			<section class="primary-inner-offset" id="vip-home">
+				<div class="container">
+					<h2 class="third-title text-green text-center">有料老人ホーム</h2>
+					<div class="cards">
+						<ul class="cards__list">
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">リッチランド豊南郷</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_01.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒274-0054 <br>千葉県船橋市 金堀町５８２−１</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text text-pink">一般型特定施設入居者生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:0478-50-3061" class="cards__link-tel text text-graphit">047-457-8511</a>
+													<a href="http://www.richlando.com" target="_blank" class="text cards__link">
+														www.richlando.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">エクセルシオール秦野</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_02.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒257-0014 <br>神奈川県秦野市今泉６０７−４</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text text-pink">一般型特定施設入居者生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:0463-85-5572" class="cards__link-tel text text-graphit">0463-85-5572</a>
+													<a href="http://www.excelsior-hadano.com" target="_blank" class="text cards__link">
+														www.excelsior-hadano.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">エクセルシオール佐原</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_03.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒287-0816 <br>千葉県香取市佐原４４９１</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text text-pink">一般型特定施設入居者生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:0478-50-3061" class="cards__link-tel text text-graphit">0478-50-3061</a>
+													<a href="http://www.excelsior-sawara.com" target="_blank" class="text cards__link">
+														www.excelsior-sawara.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">エクセルシオール千葉</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_04.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒260-0003 <br>千葉県千葉市中央区鶴沢町１０−１１</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text text-pink">一般型特定施設入居者生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:043-202-2921" class="cards__link-tel text text-graphit">043-202-2921</a>
+													<a href="http://www.excelsior-chiba.com" target="_blank" class="text cards__link">
+														www.excelsior-chiba.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">エクセルシオール湘南台</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_05.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒252-0805 <br>神奈川県藤沢市円行２丁目８−３</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text text-pink">一般型特定施設入居者生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:0466-41-2481" class="cards__link-tel text text-graphit">0466-41-2481</a>
+													<a href="http://www.excelsior-shonandai.com" target="_blank" class="text cards__link">
+														www.excelsior-shonandai.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="group-home" id="group-home">
+				<div class="container">
+					<h2 class="third-title text-green text-center">グループホーム</h2>
+					<div class="cards">
+						<ul class="cards__list">
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">いきいきの家　鴨川</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_06.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒296-0234 <br>千葉県鴨川市古畑３１７−１</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">
+														認知症対応型共同生活介護、<br>
+														介護予防認知症対応型共同生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:04-7099-9121" class="cards__link-tel text text-graphit">04-7099-9121</a>
+													<a href="http://www.ikiiki-kamogawa.com" target="_blank" class="text cards__link">
+														www.ikiiki-kamogawa.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">いきいきの家　泉</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_07.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒245-0018 <br>神奈川県横浜市泉区上飯田町８０５−６</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">認知症対応型共同生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:045-806-2351" class="cards__link-tel text text-graphit">045-806-2351</a>
+													<a href="http://www.ikiiki-izumi.com" target="_blank" class="text cards__link">
+														www.ikiiki-izumi.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">いきいきの家　今泉</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_08.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒257-0014 <br>神奈川県秦野市今泉２５４−２</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">認知症対応型共同生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:0463-85-1377" class="cards__link-tel text text-graphit">0463-85-1377</a>
+													<a href="http://www.ikiiki-imaizumi.com" target="_blank" class="text cards__link">
+														www.ikiiki-imaizumi.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+							<li class="cards__item">
+								<div class="cards__item-inner">
+									<div class="cards__item-top">
+										<h3 class="subtitle">いきいきの家　二子玉川</h3>
+									</div>
+									<div class="cards__item-bottom">
+										<div class="cards__image-wrap">
+											<div class="cards__image">
+												<img class="lazy" data-src="images/facility/facility_img_09.jpg"
+														 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+														 alt="image description">
+											</div>
+										</div>
+										<div class="cards__item-info">
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	<span class="cards__icon">
+	<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+		d="M2.05 2.148C3.363.773 5.143 0 7 0c1.857 0 3.637.773 4.95 2.148C13.263 3.523 14 5.388 14 7.333 14 13.667 7 20 7 20S0 13.667 0 7.333c0-1.945.737-3.81 2.05-5.185z"
+		fill="#4D4D4D"/><ellipse cx="6.801" cy="7.124" rx="2.915" ry="3.053" fill="#fff"/></svg>
+	</span>
+													<span class="fourth-title">所在地</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">〒157-0068 <br>東京都世田谷区宇奈根1丁目25-11</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                      <span class="cards__icon">
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M19.683 9.04L10.433.172a.625.625 0 00-.865 0L.308 9.049a1.043 1.043 0 00.733 1.783H2.5v7.5c0 .92.746 1.667 1.667 1.667h11.666c.921 0 1.667-.746 1.667-1.667v-7.5h1.458a1.043 1.043 0 00.725-1.793z"
+	fill="#4D4D4D"/><path fill="#fff" d="M7 17h6v5H7z"/></svg>
+	</span>
+													<span class="fourth-title">サービス</span>
+												</div>
+												<div class="cards__item-right">
+													<p class="text">認知症対応型共同生活介護</p>
+												</div>
+											</div>
+											<div class="cards__item-content third-top-offset">
+												<div class="cards__item-left">
+	                   <span class="cards__icon">
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+	d="M9.605 2.923c3.201.032 5.207-.172 5.477 3.458h3.904C18.986.758 14.192 0 9.503 0 4.813 0 .019.758.019 6.38h3.874c.3-3.698 2.537-3.489 5.712-3.457zM1.955 8.188c.951 0 1.742.058 1.918-.898.024-.13.038-.278.038-.448H0c0 1.423.875 1.346 1.955 1.346zM15.107 6.842h-.036c0 .171.014.32.041.448.186.882.976.827 1.923.827C18.12 8.117 19 8.19 19 6.842h-3.893z"
+	fill="#4D4D4D"/><path
+	d="M13.2 5.873v-.566c0-.253-.285-.269-.636-.269h-.575c-.352 0-.637.016-.637.27v.864H7.287v-.865c0-.253-.285-.269-.636-.269h-.575c-.352 0-.636.016-.636.27V6.365c-.927.985-3.957 5.175-4.067 5.682l.001 3.385c0 .313.25.567.555.567H16.71a.561.561 0 00.554-.567v-3.402c-.109-.492-3.138-4.68-4.065-5.665v-.493zm-6.113 6.63a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.552.539-.552.298 0 .539.247.539.551a.545.545 0 01-.539.552zm0-1.89a.545.545 0 01-.539-.55c0-.305.242-.551.539-.551.298 0 .539.246.539.55a.545.545 0 01-.539.552zm2.217 3.78a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.552.538-.552.298 0 .54.247.54.551 0 .305-.242.552-.54.552zm0-1.89a.545.545 0 01-.538-.55c0-.305.24-.551.538-.551.298 0 .54.246.54.55 0 .305-.242.552-.54.552zm2.218 3.78a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.552.54-.552.297 0 .538.247.538.551a.545.545 0 01-.538.552zm0-1.89a.545.545 0 01-.54-.55c0-.305.242-.551.54-.551.297 0 .538.246.538.55a.545.545 0 01-.538.552z"
+	fill="#4D4D4D"/>
+</svg>
+
+	</span>
+													<span class="fourth-title">連絡先</span>
+												</div>
+												<div class="cards__item-right">
+													<a href="tel:03-5494-8831" class="cards__link-tel text text-graphit">03-5494-8831</a>
+													<a href="http://www.ikiiki-futakotamagawa.com" target="_blank" class="text cards__link">
+														www.ikiiki-futakotamagawa.com
+													</a>
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

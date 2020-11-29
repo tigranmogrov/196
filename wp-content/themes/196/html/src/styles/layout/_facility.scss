@@ -1,0 +1,19 @@
+.facility {
+	.visual-top {
+		background-image: url("#{$images}facility/facility_bg.jpg");
+	}
+	.line-img {
+		padding-bottom: 8px;
+	}
+	.group-home {
+		padding-top: 0;
+		padding-bottom: 80px;
+		@include media('<lg') {
+			padding-bottom: 60px;
+		}
+
+		@include media('<sm') {
+			padding-bottom: 40px;
+		}
+	}
+}

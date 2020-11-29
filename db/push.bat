@@ -1,0 +1,1 @@
+php -r "require 'db\dump_controller.php'; build_base();"

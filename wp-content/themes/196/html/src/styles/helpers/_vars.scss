@@ -1,0 +1,39 @@
+/*
+	vars
+*/
+
+$fonts: '../fonts/';
+$images: '../images/';
+
+// fonts
+$NotoSerif: 'Noto Serif JP', serif;
+
+
+$breakpoints: (
+	xs: 375px,
+	sm: 768px,
+	md: 1024px,
+	lg: 1440px,
+);
+
+// wrap
+$container-p: 15px;
+$container-width: 1140px;
+
+// colors
+$white: #fff;
+$black: #000;
+$red: #F00000;
+$yellow: #FFD335;
+$orange: #F1B810;
+$gold: #E3AA03;
+$deepGreen: #2D6B0A;
+$graphit: #4D4D4D;
+$grey: #868686;
+$lightGray: #F0F0F1;
+$pink: #F1687F;
+$green: #70BF44;
+
+// transitions
+$transition_dur: .5s;
+$transition_tfn: cubic-bezier(.165, .84, .44, 1);

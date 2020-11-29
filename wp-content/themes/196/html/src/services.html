@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+	<meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- og format -->
+	<meta property="og:title" content="">
+	<!-- bar color -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">
+	<title>Services</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+	<%= _.template(require('./parts/header.html'))() %>
+	<div class="app" id="app">
+		<div class="services">
+			<div class="d-flex">
+				<section class="visual-top mask">
+					<div class="container">
+						<h2 class="secondary-title text-center z-index">取り組み</h2>
+					</div>
+				</section>
+			</div>
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list" id="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link">Home</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#" class="breadcrumbs__link active">取り組み</a>
+					</li>
+				</ul>
+			</div>
+			<section class="services__dream">
+				<div class="container">
+					<h2 class="third-title text-center text-green">
+						夢プラン
+					</h2>
+
+					<div class="slideshow__wrap secondary-top-offset">
+						<div class="slideshow">
+
+							<div class="slideshow__gallery swiper-container gallery">
+								<div class="slideshow__gallery-wrap swiper-wrapper">
+
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-01.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-02.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-03.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-04.jpg" alt="image description">
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="slideshow__thumbs swiper-container thumbs">
+								<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-01.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-02.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-03.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-04.jpg" alt="image description">
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination pagination-01"></div>
+					</div>
+					<div class="primary-top-offset">
+						<p class="text text-center">
+							「<span class="bold text big">夢プラン</span>」というご入居者様の夢を叶えるお手伝いをする独自の取り組みを行っています。<br>
+							施設にいることで夢を諦める事なく <br>
+							「<span class="bold text big">
+							最後まで希望をもって、その人らしく生きる
+						</span>」 <br>
+							ために、職員がご入居者様の普段の言葉を拾い、 <br>
+							夢の実現や思い出の地への外出などを実現しています。<br>
+							例えば、<br>
+							「美味しいスイーツが食べたい」というご要望や歌舞伎の観劇、大相撲の観戦等、<br>
+							ご入居者様のご要望には看護・介護・作業療法士等の各職種が連携し、可能な限り実現致します。
+						</p>
+					</div>
+
+					<div class="btn__wrap primary-top-offset">
+						<button class="btn-secondary">
+						<span class="btn-secondary__inner">
+										夢プラン事例１ <br>
+				<span class="btn-secondary__inner small">「Shall we dance?」</span>
+						</span>
+							<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+						</button>
+						<button class="btn-secondary">
+									<span class="btn-secondary__inner">
+													夢プラン事例２ <br>
+											<span class="btn-secondary__inner small">「ご自宅での誕生日会」</span>
+													</span>
+							<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+						</button>
+					</div>
+
+					<div class="primary-inner-offset">
+
+						<h2 class="subtitle text-center">夢プラン発表会の様子</h2>
+
+						<div class="slideshow__wrap secondary-top-offset">
+							<div class="slideshow">
+
+								<div class="slideshow__gallery swiper-container gallery1">
+									<div class="slideshow__gallery-wrap swiper-wrapper">
+
+										<div class="slideshow__gallery-slide swiper-slide">
+											<div class="slideshow__gallery-slide-img">
+												<img src="images/services/services_gallery-img-05.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__gallery-slide swiper-slide">
+											<div class="slideshow__gallery-slide-img">
+												<img src="images/services/services_gallery-img-06.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__gallery-slide swiper-slide">
+											<div class="slideshow__gallery-slide-img">
+												<img src="images/services/services_gallery-img-07.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__gallery-slide swiper-slide">
+											<div class="slideshow__gallery-slide-img">
+												<img src="images/services/services_gallery-img-08.jpg" alt="image description">
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+								<div class="slideshow__thumbs swiper-container thumbs1">
+									<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+										<div class="slideshow__thumbs-slide swiper-slide">
+											<div class="slideshow__thumbs-slide-img">
+												<img src="images/services/services_gallery-img-05.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__thumbs-slide swiper-slide">
+											<div class="slideshow__thumbs-slide-img">
+												<img src="images/services/services_gallery-img-06.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__thumbs-slide swiper-slide">
+											<div class="slideshow__thumbs-slide-img">
+												<img src="images/services/services_gallery-img-07.jpg" alt="image description">
+											</div>
+										</div>
+										<div class="slideshow__thumbs-slide swiper-slide">
+											<div class="slideshow__thumbs-slide-img">
+												<img src="images/services/services_gallery-img-07.jpg" alt="image description">
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-pagination pagination-02"></div>
+						</div>
+
+						<div class="primary-top-offset">
+							<p class="text text-center">
+								年1回、各施設で取り組んだ「<span class="text big bold">夢プラン</span>」の発表を行っております。<br>
+								各施設がどのような取り組みを行ったかを共有し、ご入居者様への「夢プラン」の質を向上するよう努めております。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services__lunch light-gray-bg primary-inner-offset">
+				<div class="container">
+					<h2 class="third-title text-green text-center">
+						給食グランプリ
+					</h2>
+					<div class="slideshow__wrap secondary-top-offset">
+						<div class="slideshow">
+
+							<div class="slideshow__gallery swiper-container gallery2">
+								<div class="slideshow__gallery-wrap swiper-wrapper">
+
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-09.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-10.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-11.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-12.jpg" alt="image description">
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="slideshow__thumbs swiper-container thumbs2">
+								<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-09.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-10.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-11.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-12.jpg" alt="image description">
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination pagination-03"></div>
+					</div>
+
+					<h3 class="subtitle text-center primary-top-offset">給食グランプリとは？</h3>
+					<p class="text text-center secondary-top-offset">
+						年1回グループ施設がテーマに沿った献立を作成し味や見た目、工夫した点などを競い合い、毎日の食事内容の向上に努めています。
+					</p>
+					<h3 class="subtitle text-center primary-top-offset">日々の食事に対する心構え</h3>
+					<p class="text text-center secondary-top-offset">
+						全ての施設ではご入居者様お一人お一人の嗜好やアレルギーに対応しながら栄養管理を行っています。出汁を使用し減塩したり、<br>
+						食べやすいように柔らかく調理するなど工夫を凝らしています。また季節を感じてもらえるよう、旬の食材を用いて食卓に彩りを加えています。
+					</p>
+				</div>
+			</section>
+
+			<section class="services__nature primary-inner-offset">
+				<div class="container">
+					<h2 class="third-title text-green text-center">
+						旅くらぶエクセル
+					</h2>
+					<div class="slideshow__wrap secondary-top-offset">
+						<div class="slideshow">
+
+							<div class="slideshow__gallery swiper-container gallery3">
+								<div class="slideshow__gallery-wrap swiper-wrapper">
+
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-13.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-14.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-15.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-16.jpg" alt="image description">
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="slideshow__thumbs swiper-container thumbs3">
+								<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-13.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-14.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-15.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-16.jpg" alt="image description">
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination pagination-04"></div>
+					</div>
+
+					<h3 class="subtitle text-center primary-top-offset">旅くらぶエクセルとは？</h3>
+					<p class="text text-center secondary-top-offset">
+						2018年4月より「<span class="text big bold">旅くらぶエクセル</span>」という取り組みを実施しております。<br>
+						グループ内の施設が合同で出かけるため、 <br>
+						普段は交流できない方とも一緒にお楽しみいただけます。 <br>
+						季節毎にその時しか見ることの出来ない景色や <br>
+						美味しい食事を楽しめるプランを計画しています。
+
+					</p>
+
+					<p class="text text-center secondary-top-offset">
+						例えば、海の幸のお食事会、羽田空港、横浜中華街、イルミネーション、いちご狩り、 <br>
+						グルメツアー 等、様々な場所にお出かけし、楽しんでいただいております。
+					</p>
+				</div>
+			</section>
+			<section class="services__episode primary-inner-offset light-gray-bg">
+				<div class="container">
+					<h2 class="third-title text-green text-center">
+						心温まるエピソード大賞
+					</h2>
+					<div class="slideshow__wrap secondary-top-offset">
+						<div class="slideshow">
+
+							<div class="slideshow__gallery swiper-container gallery4">
+								<div class="slideshow__gallery-wrap swiper-wrapper">
+
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-17.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-18.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-19.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-20.jpg" alt="image description">
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="slideshow__thumbs swiper-container thumbs4">
+								<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-17.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-18.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-19.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-20.jpg" alt="image description">
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination pagination-05"></div>
+					</div>
+
+					<h3 class="subtitle text-center primary-top-offset">心温まるエピソード大賞とは？</h3>
+					<p class="text text-center secondary-top-offset">
+						日々の業務の中に、 <br>
+						入居者様に寄り添い人知れず心ある看護・介護を実践している職員の姿があります。<br>
+						そんな「<span class="text big bold">心温まるエピソード</span>」を募集し、<br>
+						全職員からの投票により表彰を行っています。<br>
+						共有することでモチベーションを育み、更なるケア技術向上に取り組んでいます。
+					</p>
+
+					<div class="btn__wrap primary-top-offset">
+						<button class="btn-secondary">
+						<span class="btn-secondary__inner">
+									心温まるエピソード事例１<br>
+				<span class="btn-secondary__inner small">「気を付けて帰りなさいね」</span>
+						</span>
+							<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+						</button>
+						<button class="btn-secondary">
+									<span class="btn-secondary__inner">
+													心温まるエピソード事例２ <br>
+											<span class="btn-secondary__inner small"> 「役に立つ」</span>
+													</span>
+							<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="services__kitchen primary-inner-offset">
+				<div class="container">
+					<h2 class="third-title text-green text-center">
+						スマイルキッチン
+					</h2>
+					<div class="slideshow__wrap secondary-top-offset">
+						<div class="slideshow">
+
+							<div class="slideshow__gallery swiper-container gallery5">
+								<div class="slideshow__gallery-wrap swiper-wrapper">
+
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-21.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-22.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-23.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__gallery-slide swiper-slide">
+										<div class="slideshow__gallery-slide-img">
+											<img src="images/services/services_gallery-img-24.jpg" alt="image description">
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="slideshow__thumbs swiper-container thumbs5">
+								<div class="slideshow__thumbs-wrap swiper-wrapper">
+
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-21.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-22.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-23.jpg" alt="image description">
+										</div>
+									</div>
+									<div class="slideshow__thumbs-slide swiper-slide">
+										<div class="slideshow__thumbs-slide-img">
+											<img src="images/services/services_gallery-img-24.jpg" alt="image description">
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination pagination-06"></div>
+					</div>
+
+					<h3 class="subtitle text-center primary-top-offset">スマイルキッチンとは？</h3>
+					<p class="text text-center secondary-top-offset">
+						何歳になっても、 <br>
+						人にとって食事は生きる歓びや楽しみとなっています。 <br>
+						各施設の栄養士は日頃のコミュニケーションの中で見つけた <br>
+						ご入居者の真の声や、 <br>
+						調理方法・食材選択など様々な工夫やアイデアを <br>
+						定期的に行われる栄養士会議で共有しています。
+					</p>
+
+					<p class="text text-center secondary-top-offset">
+						たくさんのアイデアを盛り込んだ取り組みを <br>
+						<span class="text big bold">季刊誌“スマイルキッチン” </span>でご紹介します。
+					</p>
+
+
+				</div>
+			</section>
+
+			<section class="services__magazine">
+				<div class="container">
+
+					<div class="primary-inner-offset light-gray-bg">
+						<h3 class="subtitle text-center">
+							季刊誌のご紹介
+						</h3>
+
+						<div class="btn__wrap primary-top-offset">
+							<a href="#" class="btn-secondary small">
+							<span class="btn-secondary__icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g
+									clip-path="url(#clip0)"><path
+									d="M33.603 22.957l.077.238s0 0 0 0c3.149-1.023 4.97-4.746 3.922-7.971l-.238.077.238-.077a6.115 6.115 0 00-7.697-3.922l.077.238-.077-.238c-1.283.417-2.663 1.337-3.82 2.511l-.023.023-.016.028-1.935 3.349-.093.162.129.135c.313.33.586.697.812 1.094l.1.178.195-.063 4.572-1.486h0a.922.922 0 01.57 1.753s0 0 0 0l-4.57 1.485-.195.063.023.203c.05.446.048.852-.004 1.294l-.023.197.186.068 2.853 1.027.017.007 4.958-.385-.038.012v0zm0 0v.25h0l-.038-.238.038-.012h0zM27.301 10.02l-.103.529.47-.262a9.464 9.464 0 011.668-.737c4.17-1.354 8.664.936 10.02 5.106 1.375 4.235-.97 8.95-5.106 10.293a9.485 9.485 0 01-1.782.384l-.535.064.395.367c.466.433.875.89 1.216 1.358h0c2.577 3.547 1.788 8.53-1.76 11.107l.148.202-.147-.202c-3.534 2.568-7.968 1.808-10.56-1.76l-.203.148.203-.147c-.34-.469-.648-1-.916-1.577l-.227-.488-.227.488a9.474 9.474 0 01-.916 1.577l.203.147-.203-.147c-2.587 3.561-7.181 4.333-10.724 1.759-3.547-2.577-4.336-7.56-1.759-11.107a9.47 9.47 0 011.216-1.358l.395-.367-.535-.064a9.478 9.478 0 01-1.782-.384C1.614 23.604-.73 18.89.645 14.655c1.355-4.17 5.85-6.46 10.02-5.106.55.18 1.11.428 1.667.737l.47.262-.103-.528a9.461 9.461 0 01-.186-1.814c0-4.435 3.216-7.952 7.57-7.952 4.34 0 7.404 3.502 7.404 7.952 0 .58-.063 1.19-.186 1.814zm-3.464 3.984l.035-.06-.001-.07a.916.916 0 01.136-.497c1.02-1.657 1.637-3.586 1.637-5.17 0-3.509-2.324-6.108-5.562-6.108-3.275 0-5.726 2.646-5.726 6.108 0 1.584.617 3.513 1.637 5.17h0c.08.13.123.27.134.413l.004.06.032.051 1.362 2.231.114.186.2-.087a5.566 5.566 0 011.122-.357l.2-.041V10.823c0-.509.412-.921.921-.921.505 0 .906.408.906.921V15.832l.2.04c.383.079.766.196 1.114.347l.204.088.111-.193 1.22-2.111zM6.32 23.195l.077-.238-.077.238c1.414.46 3.284.495 5.07.12l.015-.003.016-.005 2.926-1.021.19-.066-.024-.199a5.462 5.462 0 01-.003-1.284l.023-.203-.194-.063-4.57-1.485s0 0 0 0a.922.922 0 01-.592-1.161h0a.921.921 0 011.161-.592l4.573 1.486.193.063.101-.177c.222-.391.49-.753.797-1.078l.13-.139-.099-.163-2.012-3.295-.015-.024-.019-.02c-1.172-1.21-2.583-2.158-3.892-2.584h0a6.115 6.115 0 00-7.697 3.922h0c-1.048 3.225.773 6.948 3.922 7.97zm12.84 7.083l.021-.27h-.02v-3.104l-.2-.04a5.558 5.558 0 01-1.2-.393l-.186-.084-.12.165-2.825 3.889s0 0 0 0a.922.922 0 01-1.288.204h0a.922.922 0 01-.204-1.288l-.202-.146.202.146 2.826-3.89.12-.165-.137-.15a5.635 5.635 0 01-.73-1l-.104-.18-.196.067-2.4.838-.028.01-.025.016h-.001l-.037.019-.115.053-.048.021a14.049 14.049 0 00-1.51.77c-.908.535-2.002 1.332-2.805 2.439a6.115 6.115 0 001.35 8.532c2.723 1.978 6.165 1.38 8.15-1.352l-.202-.146.202.146c.926-1.273 1.557-3.18 1.712-5.107zm1.828-.02v.02c.155 1.929.803 3.835 1.728 5.107l.202-.146-.202.146c.955 1.315 2.244 2.168 3.656 2.433 1.415.265 2.932-.066 4.33-1.081a6.115 6.115 0 001.35-8.532c-.815-1.123-1.907-1.914-2.819-2.447a15.136 15.136 0 00-1.41-.725l-.166-.078a3.646 3.646 0 01-.155-.078c-.002 0-.003-.002-.005-.003l-.005-.003-.03-.022-.034-.012-2.184-.787-.197-.07-.104.18c-.206.357-.45.69-.726.992l-.137.15.12.166 2.826 3.89h0a.922.922 0 11-1.491 1.083l-2.826-3.889-.12-.165-.186.085a5.693 5.693 0 01-1.215.392l-.2.04v3.355zm-4.67-8.89a3.769 3.769 0 003.764 3.765 3.769 3.769 0 003.765-3.765 3.769 3.769 0 00-3.765-3.765 3.769 3.769 0 00-3.765 3.765z"
+									fill="#70BF44" stroke="#fff" stroke-width=".5"/></g><defs><clipPath id="clip0"><path fill="#fff"
+																																																			 d="M0 0h40v40H0z"/></clipPath></defs>
+								</svg>
+							</span>
+								<span class="btn-secondary__inner">
+		         1. 春バージョン
+						</span>
+								<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+							</a>
+							<a href="#" class="btn-secondary small">
+							<span class="btn-secondary__icon">
+	<svg  id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 40 40" xml:space="preserve"><style>.st0{fill:#70bf44;stroke:#fff;stroke-width:.5}</style><path class="st0" d="M9.4 20c0-5.8 4.8-10.6 10.6-10.6S30.6 14.2 30.6 20 25.8 30.6 20 30.6 9.4 25.8 9.4 20zm1.8 0c0 4.8 3.9 8.8 8.8 8.8s8.8-3.9 8.8-8.8-3.9-8.8-8.8-8.8-8.8 4-8.8 8.8zM20.9 5.2c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4c0-.5.4-.9.9-.9s.9.4.9.9v4zM34.8 19.1h4c.5 0 .9.4.9.9s-.4.9-.9.9h-4c-.5 0-.9-.4-.9-.9s.4-.9.9-.9zM19.1 34.8c0-.5.4-.9.9-.9s.9.4.9.9v4c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-4zM5.2 19.1c.5 0 .9.4.9.9s-.4.9-.9.9h-4c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h4zM31.1 10.2c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-.9 0-1.3l3-2.9c.3-.3.9-.3 1.3 0 .4.4.4.9 0 1.3l-2.9 2.9zM31.1 29.8c-.4-.4-.9-.4-1.3 0m1.3 0h-1.3m1.3 0l2.9 2.9c.4.4.4.9 0 1.3-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-2.9-2.9m1.4-1.3l-1.3 1.3m0-1.3c-.4.4-.4.9 0 1.3m0-1.3v1.3M7.3 34c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-.9 0-1.3l2.9-2.9-.2-.2.2.2c.4-.4.9-.4 1.3 0s.4.9 0 1.3L7.3 34zM10.2 10.2c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-.2.2.2-.2L6 7.3C5.7 7 5.7 6.4 6 6c.4-.3 1-.3 1.3 0l2.9 2.9c.4.3.4.9 0 1.3zM37.7 26.4l.1-.2-.1.2c.5.2.7.7.5 1.2-.1.4-.5.6-.9.6-.1 0-.2 0-.4-.1l-3.7-1.5c-.5-.2-.7-.7-.5-1.2.2-.5.7-.7 1.2-.5l3.8 1.5zm-5.1-1.2zM7.2 14.7c-.2.3-.5.5-.9.5-.1 0-.2 0-.4-.1l-3.7-1.5-.1.2.1-.2c-.5-.2-.7-.7-.5-1.2.3-.5.8-.7 1.3-.5l3.7 1.5c.5.3.7.8.5 1.3zM26.5 33.3c-.2-.5-.7-.7-1.2-.5-.5.2-.7.7-.5 1.2l1.5 3.7c.1.4.5.6.9.6.1 0 .2 0 .4-.1.5-.2.7-.7.5-1.2m-1.6-3.7L28 37m-1.5-3.7L28 37m-1.5-3.7l1.8 3.6-.3.2M34.2 15.3c-.2.1-.5.1-.7.1-.2-.1-.4-.2-.5-.4-.2-.4-.1-1 .4-1.3l3.5-1.9c.4-.2 1-.1 1.3.4.2.4.1 1-.4 1.3l-3.6 1.8zM15.1 6c.1.2.1.5 0 .7-.1.2-.3.4-.5.5-.5.2-1 0-1.2-.5l-1.5-3.8c-.2-.5 0-1 .5-1.2.5-.2 1 0 1.2.5L15.1 6zM26.7 6.7c-.1.2-.3.4-.5.5-.2.1-.5.1-.7 0-.5-.2-.7-.7-.5-1.2l1.4-3.8c.2-.5.7-.7 1.2-.5.5.2.7.7.5 1.2l-1.4 3.8zM13.7 37.8c-.1.2-.3.4-.5.5-.2.1-.5.1-.7 0-.5-.2-.7-.7-.5-1.2l1.4-3.8c.2-.5.7-.7 1.2-.5.5.2.7.7.5 1.2l-1.4 3.8zM2.8 27.9c-.2.1-.5.1-.7-.1-.2-.1-.4-.3-.5-.5-.2-.5.1-1 .6-1.2L6 24.8c.5-.2 1 .1 1.2.6.2.5-.1 1-.6 1.2l-3.8 1.3z"/></svg>
+
+							</span>
+								<span class="btn-secondary__inner">
+	                   2. 夏バージョン
+													</span>
+								<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+							</a>
+						</div>
+
+						<div class="btn__wrap secondary-top-offset">
+							<a href="#" class="btn-secondary small">
+							<span class="btn-secondary__icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+									d="M34.75 22.044c-3.578 0-7.115.593-10.475 1.712A37.402 37.402 0 0012.745.416L12.305 0l-.44.416C4.4 7.465.12 17.395.12 27.66v.155C.12 34.534 5.586 40 12.305 40a12.12 12.12 0 008.229-3.212A33.218 33.218 0 0034.75 40c2.876 0 5.13-3.943 5.13-8.978s-2.254-8.978-5.13-8.978zm-10.037 15.05l.011-.007c-.61-.942-1.063-2.19-1.31-3.609l-1.264.22c.175 1.004.456 1.926.81 2.752a31.646 31.646 0 01-3.907-1.865l-.641-.393-.67 1.093.66.405c.295.167.6.315.9.473a10.84 10.84 0 01-6.997 2.554c-5.828 0-10.59-4.6-10.874-10.358 1.172.667 3.293 1.666 6.265 2.234l.24-1.26c-3.497-.669-5.764-1.993-6.512-2.482a36.16 36.16 0 012.011-11.083c.675.327 2.123.937 4.258 1.354l.246-1.26c-2.148-.419-3.541-1.046-4.056-1.304.43-1.104.912-2.186 1.447-3.243.708.42 2.207 1.172 4.395 1.54l.211-1.266c-2.054-.345-3.441-1.07-4.01-1.413a36.095 36.095 0 016.379-8.405 36.13 36.13 0 018.438 12.78c-.642.322-2.72 1.25-5.941 1.593l.135 1.275c3.25-.345 5.396-1.24 6.252-1.657a36.203 36.203 0 011.395 5.246c-.719.37-2.68 1.305-5.383 1.998l.318 1.243a28.321 28.321 0 005.285-1.914c.092.618.17 1.238.23 1.864a33.15 33.15 0 00-9.19 5.269l-1.915 1.554 1.914 1.556a33.213 33.213 0 002.597 1.908l.708-1.07a32.182 32.182 0 01-2.495-1.833l-.69-.561.69-.56a31.687 31.687 0 013.75-2.613 14.9 14.9 0 00-.272 1.837l1.278.107c.084-1.001.267-1.945.543-2.811a32.032 32.032 0 017.457-2.786c-.405.726-.711 1.55-.965 2.333l1.22.395c.362-1.118.879-2.468 1.658-3.128a31.638 31.638 0 012.64-.344c-1.417 1.58-2.343 4.348-2.343 7.57 0 3.21.92 5.973 2.33 7.556a31.97 31.97 0 01-7.236-1.484zm10.037 1.623c-2.086 0-3.848-3.523-3.848-7.695 0-4.171 1.762-7.695 3.848-7.695 2.085 0 3.847 3.523 3.847 7.695 0 4.172-1.762 7.695-3.847 7.695z"
+									fill="#70BF44"/><path
+									d="M27.054 31.022h-1.282c0 1.16.12 2.285.36 3.347l1.25-.281a14.008 14.008 0 01-.328-3.066zM11.075 11.733l-.107 1.277c.436.037.886.056 1.337.056v-1.282c-.415 0-.829-.017-1.23-.051zM4.952 19.577L4.48 20.77c.131.053 3.266 1.275 7.825 1.275v-1.282c-4.3 0-7.322-1.173-7.353-1.185zM16.028 23.28c-.375.078-.76.15-1.156.216l.21 1.265c.414-.068.816-.145 1.209-.227l-.263-1.255z"
+									fill="#70BF44"/>
+								</svg>
+							</span>
+								<span class="btn-secondary__inner">
+					3. 	秋バージョン
+						</span>
+								<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+							</a>
+							<a href="#" class="btn-secondary small">
+							<span class="btn-secondary__new">
+							<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" r="25" fill="#F1687F"/><path d="M19.667 20.128h-4.32v.576l2.064.224.048 7.904-6.272-8.704H7.811v.576l1.216.144.256.336-.08 10.064-1.488.192V32h4.32v-.56l-2.048-.208-.048-9.12 7.072 9.952h1.104l.08-11.152 1.472-.208v-.576zm2.963 6.96c.096-2.336.976-3.312 1.984-3.312.976 0 1.664.832 1.664 2.128 0 .816-.176 1.184-.912 1.184H22.63zm5.536.592c.08-.272.112-.576.112-.992 0-2.016-1.328-3.504-3.52-3.504-2.24 0-4.352 1.648-4.352 4.528 0 2.912 1.824 4.544 4.336 4.544 1.584 0 2.8-.752 3.44-2.064l-.32-.224c-.56.752-1.248 1.232-2.4 1.232-1.552 0-2.768-1.072-2.832-3.52h5.536zm14.549-4.24h-3.28v.512l1.44.192-1.712 5.712-2.016-5.744 1.248-.16v-.512h-3.984v.512l1.264.144-1.952 5.856-1.856-5.872 1.296-.128v-.512h-4.384v.512l.912.112 2.88 7.984h.896l2.304-6.368c.384 1.28.96 2.88 2.256 6.368h.896l2.704-7.92 1.088-.176v-.512z" fill="#fff"/></svg>
+							</span>
+								<span class="btn-secondary__icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><mask
+									id="a" fill="#fff"><path
+									d="M36.667 21.86l-7.21 2.481-2.906-1.667V17.364l2.907-1.666 7.209 2.48c.504.194 1.085-.116 1.24-.62.194-.504-.116-1.085-.62-1.24l-5.581-1.9 5.232-3.023c.465-.271.62-.891.349-1.356a1.001 1.001 0 00-1.356-.35l-5.233 3.024 1.124-5.775c.116-.543-.233-1.047-.775-1.163-.543-.116-1.047.233-1.163.775l-1.473 7.481-2.907 1.667-2.21-1.28-.038-.038-2.248-1.318V9.729l5.736-5c.427-.35.465-.97.078-1.396-.349-.426-.97-.465-1.395-.077l-4.419 3.876V1.008A1 1 0 0020 0a1 1 0 00-1.008 1.008v6.046l-4.418-3.837c-.426-.349-1.047-.31-1.396.078-.348.426-.31 1.046.078 1.395l5.736 5v3.333l-2.248 1.318-2.248 1.318-2.907-1.667-1.473-7.48c-.116-.543-.62-.892-1.162-.776-.543.117-.892.62-.775 1.163l1.124 5.775L4.07 9.651A1.002 1.002 0 002.713 10a1.002 1.002 0 00.35 1.357l5.232 3.023-5.582 1.9c-.503.193-.814.735-.62 1.24.194.503.737.813 1.24.62l7.21-2.481 2.907 1.667V22.636h.039l-2.907 1.666-7.21-2.48c-.504-.194-1.085.116-1.24.62-.194.504.116 1.085.62 1.24l5.582 1.9L3.1 28.604c-.465.271-.62.891-.349 1.356.271.465.892.62 1.357.35l5.232-3.024-1.124 5.775c-.116.543.233 1.047.775 1.163.543.116 1.047-.233 1.163-.775l1.473-7.481 2.907-1.667 2.287 1.318 2.248 1.318v3.333l-5.736 5c-.427.35-.466.97-.078 1.396.349.426.969.465 1.395.077l4.419-3.876v6.124A1 1 0 0020.078 40a1 1 0 001.008-1.008v-6.046l4.418 3.876c.426.348 1.047.31 1.395-.078.35-.426.31-1.046-.077-1.395l-5.814-5.039v-3.333l2.248-1.318 2.248-1.318 2.907 1.667 1.473 7.48c.116.543.62.892 1.163.776.542-.117.891-.62.775-1.163l-1.124-5.775 5.233 3.023A1.001 1.001 0 0037.287 30a1.002 1.002 0 00-.349-1.357l-5.232-3.023 5.581-1.9c.504-.193.814-.735.62-1.24-.194-.503-.736-.813-1.24-.62zM24.457 20v2.636l-2.248 1.317L20 25.233l-2.287-1.318-2.248-1.318V17.364l2.248-1.317 2.248-1.318 2.248 1.318.04.038 2.209 1.28V20z"/></mask><path
+									d="M36.667 21.86l-7.21 2.481-2.906-1.667V17.364l2.907-1.666 7.209 2.48c.504.194 1.085-.116 1.24-.62.194-.504-.116-1.085-.62-1.24l-5.581-1.9 5.232-3.023c.465-.271.62-.891.349-1.356a1.001 1.001 0 00-1.356-.35l-5.233 3.024 1.124-5.775c.116-.543-.233-1.047-.775-1.163-.543-.116-1.047.233-1.163.775l-1.473 7.481-2.907 1.667-2.21-1.28-.038-.038-2.248-1.318V9.729l5.736-5c.427-.35.465-.97.078-1.396-.349-.426-.97-.465-1.395-.077l-4.419 3.876V1.008A1 1 0 0020 0a1 1 0 00-1.008 1.008v6.046l-4.418-3.837c-.426-.349-1.047-.31-1.396.078-.348.426-.31 1.046.078 1.395l5.736 5v3.333l-2.248 1.318-2.248 1.318-2.907-1.667-1.473-7.48c-.116-.543-.62-.892-1.162-.776-.543.117-.892.62-.775 1.163l1.124 5.775L4.07 9.651A1.002 1.002 0 002.713 10a1.002 1.002 0 00.35 1.357l5.232 3.023-5.582 1.9c-.503.193-.814.735-.62 1.24.194.503.737.813 1.24.62l7.21-2.481 2.907 1.667V22.636h.039l-2.907 1.666-7.21-2.48c-.504-.194-1.085.116-1.24.62-.194.504.116 1.085.62 1.24l5.582 1.9L3.1 28.604c-.465.271-.62.891-.349 1.356.271.465.892.62 1.357.35l5.232-3.024-1.124 5.775c-.116.543.233 1.047.775 1.163.543.116 1.047-.233 1.163-.775l1.473-7.481 2.907-1.667 2.287 1.318 2.248 1.318v3.333l-5.736 5c-.427.35-.466.97-.078 1.396.349.426.969.465 1.395.077l4.419-3.876v6.124A1 1 0 0020.078 40a1 1 0 001.008-1.008v-6.046l4.418 3.876c.426.348 1.047.31 1.395-.078.35-.426.31-1.046-.077-1.395l-5.814-5.039v-3.333l2.248-1.318 2.248-1.318 2.907 1.667 1.473 7.48c.116.543.62.892 1.163.776.542-.117.891-.62.775-1.163l-1.124-5.775 5.233 3.023A1.001 1.001 0 0037.287 30a1.002 1.002 0 00-.349-1.357l-5.232-3.023 5.581-1.9c.504-.193.814-.735.62-1.24-.194-.503-.736-.813-1.24-.62zM24.457 20v2.636l-2.248 1.317L20 25.233l-2.287-1.318-2.248-1.318V17.364l2.248-1.317 2.248-1.318 2.248 1.318.04.038 2.209 1.28V20z"
+									fill="#70BF44" stroke="#fff" mask="url(#a)"/>
+								</svg>
+							</span>
+								<span class="btn-secondary__inner">
+						4. 冬バージョン
+													</span>
+								<span class="btn__arrow">
+		<svg width="40" height="5" viewBox="0 0 40 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M33.407 0L40 5H0V3.958h36.949L32.855.854 33.407 0z"
+			fill="#70BF44"/></svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

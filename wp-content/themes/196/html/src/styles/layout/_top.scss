@@ -1,0 +1,990 @@
+.top {
+	position: relative;
+
+	.visual {
+
+		position: relative;
+		height: 100vh;
+
+		&__slider-wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.swiper-wrapper {
+			//height: 100vh !important;
+		}
+
+		.swiper-slide {
+			.swiper-slide__img {
+				background-size: cover;
+				background-position: 50% 0;
+				background-repeat: no-repeat;
+				height: 100%;
+				transition: all 4s;
+				transform: scale(1.2);
+			}
+
+			&.swiper-slide-active {
+				.swiper-slide__img {
+					transform: scale(1) !important;
+				}
+			}
+		}
+
+		&__content {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+
+			.third-title {
+				margin-top: 40px;
+				@include media('<sm') {
+					margin-top: 30px;
+				}
+			}
+		}
+
+		&__logo {
+			max-width: 160px;
+			width: 100%;
+			display: block;
+			margin-bottom: 30px;
+			@include media('<lg') {
+				max-width: 140px;
+			}
+			@include media('<md') {
+				max-width: 120px;
+
+			}
+			@include media('<sm') {
+				max-width: 100px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: block;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+
+			img {
+				position: absolute;
+				display: block;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				object-position: 50% 50%;
+			}
+		}
+
+		@include media('<sm') {
+			background-position: 52% 50%;
+		}
+	}
+
+	.map {
+		display: block;
+		width: 100%;
+		padding-bottom: 65px;
+		//background-color: #E6D9CA;
+		background-image: url("#{$images}top/pattern-for-maps.png");
+		background-size: 250px 156px;
+		background-repeat: repeat;
+		position: relative;
+		overflow: hidden;
+		@include media('<md') {
+			flex-direction: column;
+			align-items: stretch;
+			padding-bottom: 60px;
+			overflow: auto;
+		}
+
+		@include media('<sm') {
+			padding-bottom: 40px;
+		}
+
+		&__top {
+			background-color: $graphit;
+			padding-bottom: 70px;
+
+			.text {
+				letter-spacing: 2.8px;
+				@include media('<sm') {
+					letter-spacing: .2em;
+				}
+			}
+
+			.third-title {
+				position: relative;
+				margin-top: 24px;
+				display: inline-block;
+				left: 50%;
+				transform: translateX(-50%);
+				@include media('<sm') {
+					line-height: 40px;
+					display: block;
+				}
+
+				&:after {
+					content: "";
+					left: 50%;
+					bottom: -20px;
+					transform: translateX(-50%);
+					position: absolute;
+					max-width: 539px;
+					width: calc(100% + 4px);
+					height: 20px;
+					background-image: url("#{$images}top/map_title-line.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+					@include media('<lg') {
+						bottom: -25px;
+					}
+					@include media('<md') {
+						bottom: -30px;
+					}
+					@include media('<sm') {
+						bottom: -15px;
+					}
+				}
+			}
+
+			@include media('<lg') {
+				padding-bottom: 65px;
+			}
+			@include media('<md') {
+				padding-bottom: 68px;
+			}
+			@include media('<sm') {
+				padding-bottom: 54px;
+			}
+		}
+
+		&__top-text-icon {
+			width: 34px;
+			height: 21px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 5px;
+
+			svg, path {
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+		}
+
+		&__inner {
+			position: relative;
+			max-width: 1430px;
+			display: block;
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			margin-right: auto;
+			margin-left: auto;
+			@include media('<lg') {
+				max-width: 1050px;
+			}
+			@include media('<sm') {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+
+		&__image {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__mark-wrap {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+
+			&.nth-1 {
+				top: calc(90 / 872 * 100%);
+				right: calc(194 / 1430 * 100%);
+				@include media('<lg') {
+					top: calc(71 / 608 * 100%);
+					right: calc(110 / 1024 * 100%);
+				}
+				@include media('<md') {
+					top: calc(51 / 608 * 100%);
+					right: calc(140 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					top: calc(71 / 945 * 100%);
+				}
+			}
+
+			&.nth-2 {
+				top: calc(227 / 872 * 100%);
+				right: calc(332 / 1430 * 100%);
+				@include media('<lg') {
+					top: calc(165 / 608 * 100%);
+					right: calc(174 / 1024 * 100%);
+				}
+				@include media('<md') {
+					top: calc(145 / 608 * 100%);
+					right: calc(184 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					top: calc(210 / 945 * 100%);
+					right: calc(163 / 1430 * 100%);
+				}
+			}
+
+			&.nth-3 {
+				top: calc(322 / 872 * 100%);
+				right: calc(250 / 1430 * 100%);
+				@include media('<lg') {
+					top: calc(230 / 608 * 100%);
+					right: calc(110 / 1024 * 100%);
+				}
+				@include media('<md') {
+					top: calc(210 / 608 * 100%);
+					right: calc(120 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					top: calc(320 / 945 * 100%);
+					right: calc(70 / 1430 * 100%);
+				}
+			}
+
+			&.nth-4 {
+				bottom: calc(340 / 872 * 100%);
+				right: calc(954 / 1430 * 100%);
+				@include media('<lg') {
+					bottom: calc(225 / 608 * 100%);
+					right: calc(648 / 1024 * 100%);
+				}
+				@include media('<md') {
+					bottom: calc(240 / 608 * 100%);
+					right: calc(678 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					right: calc(904 / 1430 * 100%);
+					bottom: calc(335 / 872 * 100%);
+				}
+			}
+
+			&.nth-5 {
+				bottom: calc(310 / 872 * 100%);
+				left: calc(586 / 1430 * 100%);
+				@include media('<lg') {
+					bottom: calc(205 / 608 * 100%);
+					left: calc(443 / 1024 * 100%);
+				}
+				@include media('<md') {
+					bottom: calc(225 / 608 * 100%);
+					left: calc(403 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					bottom: calc(370 / 945 * 100%);
+					left: calc(560 / 1430 * 100%);
+				}
+			}
+
+			&.nth-6 {
+				top: calc(280 / 872 * 100%);
+				right: calc(747 / 1430 * 100%);
+				@include media('<lg') {
+					top: calc(201 / 608 * 100%);
+					right: calc(505 / 1024 * 100%);
+				}
+				@include media('<md') {
+					top: calc(181 / 608 * 100%);
+					right: calc(535 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					top: calc(230 / 945 * 100%);
+					right: calc(715 / 1430 * 100%);
+				}
+			}
+
+			&.nth-7 {
+				bottom: calc(405 / 872 * 100%);
+				left: calc(550 / 1430 * 100%);
+				@include media('<lg') {
+					bottom: calc(270 / 608 * 100%);
+					left: calc(415 / 1024 * 100%);
+				}
+				@include media('<md') {
+					bottom: calc(290 / 608 * 100%);
+					left: calc(376 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					bottom: calc(450 / 945 * 100%);
+					left: calc(530 / 1430 * 100%);
+				}
+			}
+
+			&.nth-8 {
+				bottom: calc(378 / 872 * 100%);
+				left: calc(270 / 1430 * 100%);
+				@include media('<lg') {
+					bottom: calc(260 / 608 * 100%);
+					left: calc(180 / 1024 * 100%);
+				}
+				@include media('<md') {
+					bottom: calc(277 / 608 * 100%);
+					left: calc(122 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					bottom: calc(480 / 945 * 100%);
+					left: calc(120 / 1430 * 100%);
+				}
+			}
+
+			&.nth-9 {
+				bottom: calc(198 / 872 * 100%);
+				right: calc(532 / 1430 * 100%);
+				@include media('<lg') {
+					bottom: calc(126 / 608 * 100%);
+					right: calc(350 / 1024 * 100%);
+				}
+				@include media('<md') {
+					bottom: calc(146 / 608 * 100%);
+					right: calc(380 / 1024 * 100%);
+				}
+				@include media('<sm') {
+					bottom: calc(229 / 945 * 100%);
+					right: calc(516 / 1430 * 100%);
+				}
+			}
+
+			&.active {
+				.map__mark svg path {
+					fill: $graphit;
+				}
+
+				.orange {
+					svg path {
+						fill: #E29500;
+					}
+				}
+
+				.map__modal {
+					opacity: 1;
+					visibility: visible;
+					@include media('<md') {
+						opacity: 1;
+						visibility: visible;
+						display: block;
+					}
+				}
+			}
+
+		}
+
+		&__mark-inner {
+			display: block;
+			width: 32px;
+			height: 44px;
+			margin-left: 10px;
+			margin-right: 10px;
+			position: relative;
+			@include media('<lg') {
+				width: 28px;
+				height: 38px;
+			}
+			@include media('<md') {
+				width: 24px;
+				height: 33px;
+			}
+			@include media('<sm') {
+				width: 20px;
+				height: 27px;
+				margin-right: 5px;
+				margin-left: 5px;
+			}
+		}
+
+		&__mark {
+			display: block;
+			height: 100%;
+
+			svg {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+
+			svg, path {
+				fill: $gold;
+			}
+
+			&.orange {
+				svg, path {
+					fill: #FFA800;
+				}
+			}
+
+			&.active {
+				@include media('<md') {
+					svg path {
+						fill: $graphit;
+					}
+				}
+			}
+		}
+
+		&__mark-desc {
+			display: inline-block;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+			background-color: $white;
+			padding: 4px;
+			color: $graphit;
+			border-radius: 5px;
+			@include media('<lg') {
+				font-size: 14px;
+				line-height: 16px;
+			}
+			@include media('<md') {
+				font-size: 12px;
+				line-height: 14px;
+			}
+			@include media('<sm') {
+				font-size: 8px;
+				line-height: 12px;
+				padding: 0 2px;
+				border-radius: 3px;
+			}
+		}
+
+		&__modal-wrap {
+			display: none;
+			width: calc(100% - 30px);
+			position: relative;
+			height: 265px; // тут тоже высота должна быть статическая, это уже ТАБ и СП версии
+			margin-top: 20px;
+			margin-left: 15px;
+			margin-right: 15px;
+			@include media('<md') {
+				display: block;
+				height: 230px;
+				margin-top: 17px;
+			}
+			@include media('<sm') {
+				margin-top: 15px;
+			}
+
+		}
+
+		&__modal {
+			display: block;
+			width: 250px;
+			position: absolute;
+			z-index: 20;
+			overflow: hidden;
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+			border: 1px solid $deepGreen;
+			border-radius: 10px;
+			background-color: #ffffff;
+			transition: .1s;
+			opacity: 0;
+			visibility: hidden;
+
+			top: 50px;
+			transform: initial;
+			left: -50px;
+
+			@include media('<md') {
+				max-width: 500px;
+				width: 100%;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: .3s;
+			}
+
+			&.orange {
+				border: 1px solid #E29500;
+			}
+
+			&.bottom {
+				top: initial;
+				bottom: 50px;
+				@include media('<md') {
+					bottom: initial;
+					top: 0;
+				}
+			}
+
+			&.active {
+				@include media('<md') {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+
+		&__modal-header {
+			background-color: $graphit;
+			padding-top: 4px;
+			padding-bottom: 4px;
+
+			.text {
+				color: $gold;
+				line-height: 20px;
+				@include media('<md') {
+					line-height: 17px;
+				}
+			}
+
+			&.orange {
+				background-color: #E29500;
+			}
+
+			@include media('<md') {
+				padding-bottom: 9px;
+			}
+		}
+
+		&__modal-caption {
+			font-size: 12px;
+			line-height: 17px;
+			color: $gold;
+			text-align: center;
+			display: block;
+			margin-bottom: 6px;
+		}
+
+		&__modal-body {
+			padding: 10px 24px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__modal-image-wrap {
+			max-width: 200px;
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			border-radius: 5px;
+			@include media('<xs') {
+				max-width: 190px;
+			}
+		}
+
+		&__modal-image {
+			position: relative;
+			width: 100%;
+			height: 0;
+			display: block;
+			padding-bottom: calc(120 / 200 * 100%);
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				object-position: 50% 50%;
+				font-family: 'object-fit: cover; object-position: 50% 50%;';
+			}
+		}
+
+		&__modal-link {
+			display: block;
+			max-width: 200px;
+			width: 100%;
+			border: 1px solid $gold;
+			border-radius: 10px;
+			padding: 3px 9px;
+			margin-top: 10px;
+			color: $gold;
+			text-align: center;
+			font-size: 12px;
+			line-height: 17px;
+			position: relative;
+			transition: .4s;
+			@at-root :root.hover &:hover {
+				background-color: $gold;
+				color: $white;
+				&:after {
+					border-left-color: $white;
+				}
+			}
+			&:after {
+				content: '';
+				right: 5px;
+				top: 50%;
+				transform: translateY(-50%);
+				position: absolute;
+				border: 5px solid transparent;
+				border-left: 6px solid $gold;
+				@include media('<md') {
+					right: 3px;
+				}
+			}
+		}
+
+	}
+
+	&__cards {
+		display: block;
+		padding-top: 150px;
+		padding-bottom: 80px;
+
+		.container {
+			max-width: 1400px;
+			@include media('<md') {
+				max-width: 994px;
+			}
+		}
+
+		@include media('<lg') {
+			padding-top: 120px;
+			padding-bottom: 60px;
+		}
+
+		@include media('<md') {
+			padding-top: 90px;
+		}
+		@include media('<sm') {
+			padding-top: 44px;
+			padding-bottom: 40px;
+		}
+	}
+
+	&__list {
+		display: block;
+	}
+
+	&__item {
+		display: block;
+		margin-bottom: 80px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+
+		&:nth-child(even) {
+			.top__item-link {
+				flex-direction: row-reverse;
+				@include media('<sm') {
+					flex-direction: column;
+				}
+
+				.top__item-arrow-wrap {
+					right: 0;
+					left: initial;
+				}
+			}
+		}
+
+		@include media('<lg') {
+			margin-bottom: 60px;
+		}
+
+		@include media('<md') {
+			&:nth-child(4) {
+				.top__item-content-text {
+					max-width: 87px;
+				}
+			}
+		}
+
+		@include media('<sm') {
+			margin-bottom: 40px;
+		}
+
+		@include media('<xs') {
+			&:nth-child(4) {
+				.top__item-content-text {
+					max-width: 56px;
+				}
+			}
+		}
+
+		@at-root :root.hover &:hover {
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+			.top__item-arrow-wrap {
+				background-color: #333;
+				border-color: $gold;
+			}
+
+			.top__item-arrow {
+				svg, path {
+					fill: $gold;
+				}
+			}
+
+			.top__item-image {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__item-link {
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+		transition: .4s;
+		@include media('<sm') {
+			flex-direction: column;
+		}
+	}
+
+	&__item-image-wrap {
+		display: block;
+		overflow: hidden;
+		width: calc(100% - 318px);
+		@include media('<lg') {
+			width: calc(100% - 282px);
+		}
+		@include media('<md') {
+			width: calc(100% - 246px);
+		}
+		@include media('<sm') {
+			width: 100%;
+			order: 1;
+		}
+	}
+
+	&__item-image {
+		display: block;
+		width: 100%;
+		position: relative;
+		transition: .4s;
+		padding-bottom: calc(500 / 1082 * 100%);
+		@include media('<lg') {
+			padding-bottom: calc(440 / 712 * 100%);
+		}
+		@include media('<md') {
+			padding-bottom: calc(380 / 492 * 100%);
+		}
+		@include media('<sm') {
+			padding-bottom: calc(266 / 345 * 100%);
+		}
+
+
+		img {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 50%;
+			font-family: 'object-fit: cover; object-position: 50% 50%;';
+		}
+	}
+
+	&__item-content {
+		width: 318px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background-color: #333;
+		position: relative;
+		@include media('<lg') {
+			width: 282px;
+		}
+		@include media('<md') {
+			width: 246px;
+		}
+		@include media('<sm') {
+			width: 100%;
+			order: 2;
+			min-height: 266px;
+		}
+	}
+
+	&__item-content-desc {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		.text, .third-title {
+			color: $lightGray;
+		}
+
+		.third-title {
+			line-height: 44px;
+			@include media('<sm') {
+				line-height: 34px;
+			}
+
+			&.line-img {
+				padding-bottom: 35px;
+
+				&:after {
+					bottom: 0;
+					@include media('<lg') {
+						bottom: -10px;
+					}
+					@include media('<md') {
+						bottom: 0;
+					}
+				}
+
+				@include media('<lg') {
+					padding-bottom: 25px;
+				}
+			}
+		}
+
+		.text {
+			text-transform: uppercase;
+			letter-spacing: .3em;
+			line-height: 30px;
+		}
+	}
+
+	&__item-arrow-wrap {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		border: 1px solid transparent;
+		background-color: $gold;
+		transition: .4s;
+		@include media('<lg') {
+			width: 70px;
+			height: 70px;
+		}
+		@include media('<md') {
+			width: 60px;
+			height: 60px;
+		}
+
+	}
+
+	&__item-arrow {
+		max-width: 42px;
+		width: 100%;
+		display: block;
+
+		svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		svg, path {
+			fill: $black;
+		}
+
+		@include media('<lg') {
+			max-width: 35px;
+		}
+		@include media('<md') {
+			max-width: 30px;
+		}
+		@include media('<sm') {
+			max-width: 20px;
+		}
+	}
+
+	.notice {
+
+		.container {
+			max-width: 900px;
+			@include media('<lg') {
+				max-width: 994px;
+				box-sizing: content-box;
+			}
+		}
+
+		padding-top: 120px;
+		padding-bottom: 120px;
+		@include media('<lg') {
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+		@include media('<sm') {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+
+	}
+
+	/*	.pagination {
+			position: fixed;
+			right: 33px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			z-index: 99;
+			@include media('<lg') {
+				right: 14px;
+			}
+			@include media('<md') {
+				display: none;
+			}
+
+			a {
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background-color: $green;
+				opacity: .3;
+				display: block;
+				margin: 15px 0;
+
+				&.active {
+					opacity: 1;
+					width: 12px;
+					height: 12px;
+				}
+			}
+
+		}*/
+}
+
+
+
+
+
+
+

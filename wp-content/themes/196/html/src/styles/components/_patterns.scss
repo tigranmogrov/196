@@ -1,0 +1,70 @@
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.z-index {
+	position: relative;
+	z-index: 10;
+}
+
+.text-white {
+	color: $white;
+}
+
+.text-red {
+	color: $red;
+}
+
+
+.text-gold{
+	color: $gold;
+}
+
+.text-pink {
+	color: $pink;
+}
+
+.text-graphit {
+	color: $graphit;
+}
+
+.pink-bg {
+	background-color: $pink;
+}
+
+.light-gray-bg {
+	background-color: $lightGray;
+}
+
+.green-bg {
+	background-color: $green;
+}
+
+.dark-grey-bg{
+	background-color: #333;
+}
+.graphit-bg{
+	background-color: $graphit;
+}
+.pattern-bg{
+	background-image: url("#{$images}top/mask-group.png");
+	background-size: 215px;
+	background-repeat: repeat;
+	background-color: #4c4c4d;
+}
+.border {
+	border: 1px solid $grey;
+}
+
+.outline {
+	outline: 1px solid $grey;;
+}

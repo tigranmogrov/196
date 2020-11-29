@@ -1,0 +1,623 @@
+.about {
+	background-color: #333;
+.line-img{
+	padding-bottom: 8px;
+}
+	.visual-top {
+		background-image: url("#{$images}about/about_bg.jpg");
+	}
+
+	&__support-top {
+		max-width: 880px;
+		width: 100%;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 52px;
+		padding-bottom: 130px;
+		@include media('<lg') {
+			padding-top: 0;
+			padding-bottom: 60px;
+			max-width: 680px;
+		}
+		@include media('<md') {
+			padding-top: 60px;
+			max-width: 480px;
+		}
+		@include media('<sm') {
+			max-width: 280px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+	}
+
+	&__support {
+		display: block;
+		padding-bottom: 0;
+		@include media('<md') {
+			padding-top: 0;
+		}
+	}
+
+	&__support-list {
+		display: block;
+	}
+
+	&__support-item {
+		display: block;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: calc(1400 / 1920 * 100vw);
+			height: calc(100% - 80px);
+			background-color: $graphit;
+			z-index: 1;
+			@include media('<lg') {
+				width: calc(1690 / 1920 * 100vw);
+				height: calc(100% - 65px);
+			}
+			@include media('<md') {
+				width: 100%;
+			}
+		}
+	}
+
+	&__support-item-inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		max-width: 1400px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+		z-index: 10;
+		@include media('<md') {
+			flex-direction: column;
+		}
+	}
+
+	&__support-desc-wrap {
+		position: relative;
+		padding-top: 125px;
+		padding-bottom: 132px;
+		max-width: 540px;
+		width: 100%;
+		//padding-left: calc(390 / 1920 * 100vw);
+		margin-right: 80px;
+		margin-left: auto;
+
+		@include media('<lg') {
+			//padding-left: calc(110 / 1920 * 100vw);
+			padding-top: 95px;
+			padding-bottom: 95px;
+			margin-right: 20px;
+			padding-left: 20px;
+			max-width: 515px;
+		}
+		@include media('<md') {
+			max-width: 100%;
+			padding: 60px 15px;
+			margin-left: 0;
+		}
+		@include media('<sm') {
+			padding-bottom: 40px;
+			padding-top: 40px;
+		}
+	}
+
+	&__support-desc {
+		display: block;
+	}
+
+	&__support-img-wrap {
+		max-width: 650px;
+		width: 100%;
+		display: block;
+		margin-top: 415px;
+		position: relative;
+		z-index: 10;
+		@include media('<lg') {
+			max-width: 470px;
+			margin-top: 439px;
+		}
+		@include media('<md') {
+			max-width: 100%;
+			margin-left: 0;
+			margin-top: 0;
+		}
+	}
+
+	&__support-img {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: calc(450 / 650 * 100%);
+		@include media('<md') {
+			padding-bottom: calc(400 / 768 * 100%);
+		}
+		@include media('<sm') {
+			padding-bottom: calc(250 / 375 * 100%);
+
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 0;
+			font-family: 'object-fit: cover; object-position: 50% 0;';
+		}
+	}
+
+	&__action {
+		display: block;
+
+		.container {
+			max-width: 1110px;
+		}
+	}
+
+	&__action-list-wrap {
+		display: block;
+		@include media('<md') {
+			max-width: 430px;
+			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	&__action-list {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: center;
+		margin-left: -65px;
+		margin-right: -65px;
+		@include media('<lg') {
+			margin-left: -55px;
+			margin-right: -55px;
+		}
+
+		@include media('<md') {
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-bottom: -40px;
+		}
+		@include media('<sm') {
+			margin-left: -5px;
+			margin-right: -5px;
+			margin-bottom: -27px;
+		}
+	}
+
+	&__action-item {
+		display: block;
+		text-align: center;
+		padding-left: 65px;
+		padding-right: 65px;
+		@include media('<lg') {
+			padding-left: 55px;
+			padding-right: 55px;
+		}
+		@include media('<md') {
+			width: 50%;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 40px;
+		}
+
+		@include media('<sm') {
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 30px;
+
+			.third-top-offset {
+				margin-top: 0;
+				padding-top: 11px;
+			}
+		}
+
+		@at-root :root.hover &:hover {
+
+			.about__action-icon{
+				transform: translateY(-13px);
+			}
+			.animate-item {
+				display: inline-block;
+				animation: animate .4s ease-in-out;
+			}
+		}
+	}
+
+
+	&__action-icon {
+		display: block;
+		width: 180px;
+		height: 180px;
+		margin-right: auto;
+		margin-left: auto;
+		transition: .4s;
+
+		svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		@include media('<lg') {
+			width: 160px;
+			height: 160px;
+		}
+		@include media('<md') {
+			width: 140px;
+			height: 140px;
+		}
+		@include media('<sm') {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+	&__logo-info {
+		background-color: #4C4C4C;
+		position: relative;
+
+		.container {
+			max-width: 1140px;
+		}
+	}
+
+	&__logo-info-image {
+		display: block;
+		max-width: 130px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+		@include media('<lg') {
+			max-width: 110px;
+		}
+		@include media('<md') {
+			max-width: 90px;
+		}
+		@include media('<sm') {
+			margin-bottom: 20px;
+			max-width: 70px;
+		}
+	}
+
+	&__logo-info-content {
+		display: block;
+
+		.text {
+			text-align: center;
+			@include media('<sm') {
+				text-align: left;
+			}
+		}
+	}
+
+	&__logo-info-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: -15px;
+		margin-right: -15px;
+		@include media('<sm') {
+			flex-direction: column;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	&__logo-info-item {
+		padding-left: 15px;
+		padding-right: 15px;
+		display: block;
+		@include media('<sm') {
+			padding-left: 0;
+			padding-right: 0;
+			&:not(:first-child) {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	&__logo-info-item-img {
+		max-width: 360px;
+		width: 100%;
+		display: block;
+	}
+
+	&__logo-info-image-line {
+		display: block;
+		max-width: 1140px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 80px;
+		@include media('<lg') {
+			margin-top: 60px;
+		}
+		@include media('<sm') {
+			margin-top: 40px;
+		}
+	}
+
+	&__logo-info-content-bottom {
+		display: block;
+
+		.text {
+			margin-top: 10px;
+			@include media('<sm') {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__logo-info-image-arrow {
+		max-width: 590px;
+		width: 100%;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		@include media('<lg') {
+			max-width: 560px;
+		}
+		@include media('<md') {
+			max-width: 530px;
+		}
+	}
+
+	&__company {
+		@include media('<md') {
+			.container {
+				padding-left: 13.5px;
+				padding-right: 13.5px;
+			}
+		}
+	}
+
+	&__company-list {
+		display: block;
+	}
+
+	&__company-item {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-left: -50px;
+		margin-right: -50px;
+
+		&:not(:first-child) {
+			margin-top: 77px;
+			@include media('<lg') {
+				margin-top: 55px;
+			}
+			@include media('<md') {
+				margin-top: 60px;
+			}
+
+			@include media('<sm') {
+				margin-top: 40px;
+			}
+		}
+
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+
+			@include media('<md') {
+				flex-direction: column-reverse;
+			}
+		}
+
+		@include media('<lg') {
+			margin-left: -37px;
+			margin-right: -37px;
+		}
+
+		@include media('<md') {
+			flex-direction: column-reverse;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+	}
+
+	&__company-item-content {
+		width: 50%;
+		display: block;
+		padding-left: 50px;
+		padding-right: 50px;
+
+		&:nth-child(2) {
+			margin-top: 106px;
+			@include media('<lg') {
+				margin-top: 86px;
+			}
+			@include media('<md') {
+				margin-top: 0;
+			}
+		}
+
+		@include media('<lg') {
+			padding-left: 37px;
+			padding-right: 37px;
+		}
+
+		@include media('<md') {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			&.image {
+				max-width: 380px;
+				width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 30px;
+			}
+		}
+		@include media('<sm') {
+			&.image {
+				max-width: 300px;
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__company-info {
+		margin-top: 80px;
+		@include media('<lg') {
+			margin-top: 60px;
+		}
+		@include media('<sm') {
+			margin-top: 40px;
+		}
+	}
+
+	&__company-info-item {
+		border-bottom: 1px solid $grey;
+		padding-top: 29px;
+		padding-bottom: 30px;
+		@include media('<sm') {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		&:first-child {
+			border-top: 1px solid $grey;
+		}
+	}
+
+	&__company-info-item-inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		&:not(:first-child) {
+			margin-top: 30px;
+			@include media('<md') {
+				margin-top: 20px;
+			}
+			@include media('<sm') {
+				margin-top: 10px;
+			}
+		}
+
+		@include media('<md') {
+			flex-direction: column;
+		}
+	}
+
+	&__company-info-left {
+		max-width: 226px;
+		margin-right: 30px;
+		width: 100%;
+		display: block;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			max-width: 330px;
+		}
+
+		.text {
+			line-height: 26px;
+		}
+
+		&.third-top-offset {
+			@include media('>=md') {
+				margin-top: 0;
+			}
+		}
+
+		@include media('<md') {
+			margin-right: 0;
+		}
+	}
+
+	&__company-info-right {
+		display: block;
+		width: 100%;
+		@include media('>=md') {
+			&.third-top-offset {
+				margin-top: 0;
+			}
+		}
+
+		@include media('<sm') {
+			margin-top: 10px;
+		}
+	}
+
+	&__company-info-right-inner {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		@include media('<sm') {
+			flex-direction: column;
+			align-items: flex-start;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.address {
+			max-width: 280px;
+			width: 100%;
+			display: block;
+
+			@include media('<sm') {
+				max-width: 100%;
+				padding-left: 30px;
+			}
+		}
+
+		.branch {
+			max-width: 250px;
+			width: 100%;
+			display: block;
+			@include media('<md') {
+				max-width: 280px;
+			}
+			@include media('<sm') {
+				max-width: 100%;
+				padding-left: 30px;
+			}
+		}
+
+		.tell {
+			max-width: 180px;
+			width: 100%;
+			display: block;
+			@include media('<md') {
+				max-width: 178px;
+			}
+			@include media('<sm') {
+				max-width: 100%;
+				padding-left: 30px;
+			}
+		}
+	}
+
+	&__btn-wrap {
+		margin-top: 80px;
+
+		@include media('<lg') {
+			margin-top: 60px;
+		}
+		@include media('<sm') {
+			margin-top: 40px;
+		}
+	}
+
+}

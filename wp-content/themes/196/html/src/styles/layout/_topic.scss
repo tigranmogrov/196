@@ -1,0 +1,14 @@
+.topic {
+	.visual-top {
+		background-image: url("#{$images}topic/topic_bg.jpg");
+	}
+background-color: #333;
+	.notice{
+		&__list{
+			margin-top: 0;
+		}
+		&__item-date{
+			margin-right: 30px;
+		}
+	}
+}
